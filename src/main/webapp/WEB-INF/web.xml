@@ -1,0 +1,95 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- Ping -->
+  <servlet>
+    <servlet-name>Ping</servlet-name>
+    <servlet-class>servlet.PingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ping</servlet-name>
+    <url-pattern>/ping.lulu</url-pattern>
+  </servlet-mapping>
+  <!-- MessageServiceServlet (ajax) -->
+  <servlet>
+    <servlet-name>MessageServiceServlet</servlet-name>
+    <servlet-class>servlet.app.MessageServiceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageServiceServlet</servlet-name>
+    <url-pattern>/message.ajax</url-pattern>
+  </servlet-mapping>
+  <!-- MessageIndexControllerServlet (ajax) -->
+  <servlet>
+    <servlet-name>MessageIndexControllerServlet</servlet-name>
+    <servlet-class>servlet.app.MessageIndexControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageIndexControllerServlet</servlet-name>
+    <url-pattern>/index.ajax</url-pattern>
+  </servlet-mapping>
+  <!-- MessagesControllerServlet (ajax) -->
+  <servlet>
+    <servlet-name>MessagesControllerServlet</servlet-name>
+    <servlet-class>servlet.app.MessagesControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessagesControllerServlet</servlet-name>
+    <url-pattern>/messages.ajax</url-pattern>
+  </servlet-mapping>
+  <!-- IndexControllerServlet (page) -->
+  <servlet>
+    <servlet-name>IndexControllerServlet</servlet-name>
+    <servlet-class>servlet.app.IndexControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexControllerServlet</servlet-name>
+    <url-pattern>/index.jhtml</url-pattern>
+  </servlet-mapping>
+      <filter>
+        <filter-name>FiltroTesteController</filter-name>
+        <filter-class>br.edu.ifpb.controller.servlets.FiltroTesteController</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FiltroTesteController</filter-name>
+        <url-pattern>/user/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>LogoutUsuarioControllerServlet</servlet-name>
+        <servlet-class>br.edu.ifpb.controller.servlets.LogoutUsuarioControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutUsuarioControllerServlet</servlet-name>
+        <url-pattern>/LogoutUsuario</url-pattern>
+    </servlet-mapping>
+  <!-- MessageServiceServlet (ajax) -->
+  <servlet>
+    <servlet-name>MessageServiceServlet</servlet-name>
+    <servlet-class>br.edu.ifpb.controller.servlets.MessageServiceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageServiceServlet</servlet-name>
+    <url-pattern>/message.ajax</url-pattern>
+  </servlet-mapping>
+  <!-- MessageIndexControllerServlet (ajax) -->
+  <servlet>
+    <servlet-name>MessageIndexControllerServlet</servlet-name>
+    <servlet-class>br.edu.ifpb.controller.servlets.MessageIndexControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageIndexControllerServlet</servlet-name>
+    <url-pattern>/index.ajax</url-pattern>
+  </servlet-mapping>
+  <!-- MessagesControllerServlet (ajax) -->
+  <servlet>
+    <servlet-name>MessagesControllerServlet</servlet-name>
+    <servlet-class>br.edu.ifpb.controller.servlets.MessagesControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessagesControllerServlet</servlet-name>
+    <url-pattern>/messages.ajax</url-pattern>
+  </servlet-mapping>      
+  <!-- Welcome -->
+  <welcome-file-list>
+    <welcome-file>index.jhtml</welcome-file>
+  </welcome-file-list>
+</web-app>

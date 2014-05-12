@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <title>Novo por aqui? Cadastre-se!</title>
+        <link href="estilos/cadastro.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="container" class="principal">
+            <div id="menu"><span><a id="miauter" href="index.jsp">Miautter.com</span></a></div>              
+            <div id="form">
+                <div id="formCadastro">
+                    <form id="form1" action="CadastrarUsuario" method="post">                      
+                        <span id="cadastroSpan">__________ Cadastro __________</span>
+                        <div for="nome" id="nome">                            
+                            <input name="nome" type="text" id="login" placeholder="Nome Completo" required/>                            
+                        </div>
+
+                        <div for="login" id="login">
+                            <input name="login" type="text" id="email" placeholder="Login" required/>
+                        </div>
+
+                        <div for="email" id="email">
+                            <input name="email" type="email" id="senha" placeholder="Endereço de E-mail" required/>
+                        </div>
+
+                        <div for="senha" id="senha">
+                            <input name="senha" type="password" id="senha" placeholder="Senha" required />
+                        </div>
+
+                        <div id="botao">
+                            <input type="submit" name="enviar" value="Salvar" id="button"/>
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>

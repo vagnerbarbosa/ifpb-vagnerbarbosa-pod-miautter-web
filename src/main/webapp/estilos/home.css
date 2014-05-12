@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+body {
+	font-family:Tahoma, Verdana, Arial;
+	font-size: 11px;
+	margin: 0;
+	background-image: url(../imagens/gato.jpg);
+        background-repeat: no-repeat;
+}
+
+#menu{    
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        background-image: url(../imagens/retangulo.png);
+        font-family: Arial, sans-serif, Helvetica;
+        padding-top: 10px;
+        font-size: 20px;
+        color: white;        
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#container {
+    width: 1024px;
+    position:absolute;
+    height: 762px;
+    float: outside;
+    margin-left: 250px;
+    margin-top: 0px;    
+    background-image: url(../imagens/wash-black-30.png);    
+}
+
+#perfil {
+    width: 385px;
+    position:relative;
+    height: 200px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 55px;
+    background-color: #F2F2F2;
+    border-radius:5px;
+}
+
+#messages {
+    width: 515px;
+    position:relative;
+    height: 600px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 55px;    
+    background-color: #F2F2F2;
+    border-radius:5px; 
+    text-decoration-color: #0076a3;
+}
+
+#rodape {
+    width: 925px;
+    position:relative;
+    height: 50px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    border-radius:5px;    
+}
+
+#perfilPainel {
+    height: 190px;
+    box-shadow: 5px 5px 10px #0076a3;
+    -webkit-box-shadow: 5px 5px 10px #0076a3;
+    -moz-box-shadow: 5px 5px 10px #0076a3;    
+}
+
+#feedPainel {
+    height: 590px;
+    box-shadow: 5px 5px 10px #0076a3;
+    -webkit-box-shadow: 5px 5px 10px #0076a3;
+    -moz-box-shadow: 5px 5px 10px #0076a3;    
+}
+
+#rodapePainel {
+    width: 915px;
+    height: 50px;    
+    box-shadow: 5px 5px 10px #0076a3;
+    -webkit-box-shadow: 5px 5px 10px #0076a3;
+    -moz-box-shadow: 5px 5px 10px #0076a3;
+    text-align: center;
+}
+
+
